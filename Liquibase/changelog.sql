@@ -21,3 +21,6 @@ CREATE TABLE customers
   lastName varchar2(50) NOt NULL,
   postalCode number(20)
 );
+
+--changeset christofn:005_alter_customers logicalFilePath:changelog
+ALTER TABLE CUSTOMERS RENAME COLUMN customer_id to customerId;
