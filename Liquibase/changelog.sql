@@ -1,13 +1,13 @@
 --liquibase formatted sql 
 
---changeset christofn:001_alter_employees
+--changeset christofn:001_alter_employees logicalFilePath:changelog
 ALTER TABLE Employees RENAME COLUMN EmployeeNr to EmployeeId;
 
---changeset christofn:002_alter_employees
+--changeset christofn:002_alter_employees logicalFilePath:changelog
 ALTER TABLE Employees 
 ADD job_title VARCHAR2(100);
 
---changeset christofn:003_insert_offices
+--changeset christofn:003_insert_offices logicalFilePath:changelog
 INSERT INTO Offices (OfficeCode, City, PostalCode, Address)
 VALUES ('ACNBE', 'Brussel', 1000, 'Waterloolaan 16');
 
