@@ -24,3 +24,7 @@ CREATE TABLE customers
 
 --changeset christofn:005_alter_customers logicalFilePath:changelog
 ALTER TABLE CUSTOMERS RENAME COLUMN customer_id to customerId;
+
+--changeset christofn:006_alter_offices logicalFilePath:changelog
+ALTER TABLE Offices
+MODIFY PostalCode varchar2(10);
